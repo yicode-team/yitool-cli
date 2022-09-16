@@ -7,8 +7,6 @@ import inquirer from 'inquirer';
 import ora from 'ora';
 import { fileURLToPath } from 'url';
 
-// yicode相关
-
 import { statistics } from './statistics.js';
 
 // 提示参数收集

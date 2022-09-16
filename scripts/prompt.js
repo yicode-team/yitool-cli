@@ -7,7 +7,6 @@ import inquirer from 'inquirer';
 import { fileURLToPath, pathToFileURL } from 'url';
 
 import { cliDir } from '../system.js';
-console.log('🚀 ~ file: prompt.js ~ line 10 ~ cliDir', cliDir);
 
 // 提示参数收集
 let promptParams = {
@@ -46,7 +45,6 @@ async function executeCommand() {
     _merge(promptParams, _executeCommand);
     // 命令执行路径
     let commandPath = pathToFileURL(path.resolve(cliDir, 'scripts', promptParams.executeCommand, 'prompt.js'));
-    console.log('🚀 ~ file: prompt.js ~ line 48 ~ executeCommand ~ commandPath', commandPath);
     let { prompt } = await import(commandPath.href);
     await prompt();
 }

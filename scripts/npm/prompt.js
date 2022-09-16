@@ -5,7 +5,7 @@ import fs from 'fs-extra';
 import { merge as _merge } from 'lodash-es';
 
 import npmLists from './npmLists.js';
-import { npmrc } from '../system.js';
+import { npmrc } from '../../system.js';
 
 // 提示参数收集
 let promptParams = {};
