@@ -7,7 +7,7 @@
 安装 yitool
 
 ```bash
-npm install -g yitool-cli
+npm install -g @yicode/yitool-cli
 ```
 
 # 查看 git 统计
