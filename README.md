@@ -2,6 +2,28 @@
 
 易编程工作室出品 - 开发工具库
 
+# 安装工具
+
+安装 yitool
+
+```bash
+npm install -g yitool-cli
+```
+
+# 查看 git 统计
+
+![picture 3](https://s2.loli.net/2022/09/16/BG2xSwbeVLaYJ1u.png)
+
+# 切换 npm 镜像地址
+
+查看当前镜像地址
+
+![picture 4](https://s2.loli.net/2022/09/16/gVdwLMN67yjDQ4z.png)
+
+选择并切换镜像地址
+
+![picture 6](https://s2.loli.net/2022/09/16/IOxcv6Mm2VboTKd.png)
+
 # 易编程工作室介绍
 
 ![picture 1](https://s2.loli.net/2022/09/16/VKkZq5Bb632vsuy.png)
