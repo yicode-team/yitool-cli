@@ -21,14 +21,35 @@ export async function statistics(options) {
             head: ['提交人', '最后提交时间', '相对时间', '提交次数', '今日提交时间', '今日提交总次数', '昨日提交时间', '昨日总次数']
         });
         let table2 = new Table({
-            head: ['最新提交人', '最新提交邮箱', '最新提交时间', '提交总次数']
+            head: ['最新提交人', '最新提交邮箱', '最新提交相对时间', '最新提交时间', '提交总次数']
+        });
+        let table3 = new Table({
+            head: ['最早提交人', '最早提交邮箱', '最早提交相对时间', '最早提交时间']
         });
         let git = simpleGit();
 
         let logs = await git.log();
 
-        table2.push([logs.latest.author_name, logs.latest.author_email, dayjs(logs.latest.date).format('YYYY-MM-DD HH:mm:ss'), logs.total]);
+        // 最新提交记录
+        table2.push([
+            //
+            logs.latest.author_name,
+            logs.latest.author_email,
+            dayjs(logs.latest.date).fromNow(),
+            dayjs(logs.latest.date).format('YYYY-MM-DD HH:mm:ss'),
+            logs.total
+        ]);
         console.log(table2.toString());
+
+        // 最早提交记录
+        table3.push([
+            //
+            logs.all[logs.all.length - 1].author_name,
+            logs.all[logs.all.length - 1].author_email,
+            dayjs(logs.all[logs.all.length - 1].date).fromNow(),
+            dayjs(logs.all[logs.all.length - 1].date).format('YYYY-MM-DD HH:mm:ss')
+        ]);
+        console.log(table3.toString());
 
         let logsGroup = [];
 
