@@ -36,6 +36,7 @@
         "release-it": "^15.4.2"
     },
     "dependencies": {
+        "adm-zip": "^0.5.9",
         "chalk": "^5.0.1",
         "cli-table3": "^0.6.3",
         "dayjs": "^1.11.5",
@@ -45,6 +46,7 @@
         "ini": "^3.0.1",
         "inquirer": "^9.1.1",
         "lodash-es": "^4.17.21",
+        "log-symbols": "^5.1.0",
         "nodejs-file-downloader": "^4.10.2",
         "ora": "^6.1.2",
         "simple-git": "^3.14.0"

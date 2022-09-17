@@ -1,6 +1,6 @@
 // 模块导入
 import path from 'path';
-import { merge as _merge } from 'lodash-es';
+import { merge as _merge, padEnd as _padEnd } from 'lodash-es';
 import fs from 'fs-extra';
 import chalk from 'chalk';
 import inquirer from 'inquirer';
@@ -20,15 +20,19 @@ let promptParams = {
 async function executeCommand() {
     let choices = [
         {
-            name: 'git' + chalk.cyanBright('  git提交数据可视化'),
+            name: `${_padEnd('git', 12)} ${chalk.cyanBright('git提交数据可视化')}`,
             value: 'git'
         },
         {
-            name: 'npm' + chalk.cyanBright('  切换npm源地址'),
+            name: `${_padEnd('npm', 12)} ${chalk.cyanBright('切换npm源地址')}`,
             value: 'npm'
         },
         {
-            name: 'version' + chalk.cyanBright('  查看版本信息'),
+            name: `${_padEnd('template', 12)} ${chalk.cyanBright('下载项目模板')}`,
+            value: 'template'
+        },
+        {
+            name: `${_padEnd('version', 12)} ${chalk.cyanBright('查看版本信息')}`,
             value: 'version'
         }
     ];
