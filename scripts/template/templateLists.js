@@ -23,6 +23,12 @@ let _templateLists = [
         value: 'yiapi-free',
         describe: '通用免费yiapi接口开发模板',
         url: 'https://static.chensuiyi.com/download/yiapi-free.zip'
+    },
+    {
+        name: 'uniapp模板',
+        value: 'yiuni-vue2',
+        describe: '通用uniap + vue2基础项目模板',
+        url: 'https://static.chensuiyi.com/download/yiuni-vue2.zip'
     }
 ];
 
