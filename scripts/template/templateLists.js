@@ -2,27 +2,27 @@ import { padStart as _padStart, padEnd as _padEnd, last as _last } from 'lodash-
 let _templateLists = [
     {
         name: '基础模板',
-        value: 'vue2-base-webpack',
+        value: 'yibase-vue2',
         describe: '通用Vue2基础项目模板',
         url: 'https://static.chensuiyi.com/download/yibase-vue2.zip'
     },
     {
         name: '基础模板',
-        value: 'vue3-base-vite',
+        value: 'yibase-vue3',
         describe: '通用Vue3基础项目模板',
-        url: 'https://static.chensuiyi.com/download/yicode-template-vue3-base-vite.zip'
+        url: 'https://static.chensuiyi.com/download/yibase-vue3.zip'
     },
     {
         name: '后台模板',
-        value: 'vue2-admin-webpack',
+        value: 'yiadmin-vue2',
         describe: '通用Vue2后台项目模板',
-        url: 'https://static.chensuiyi.com/download/yicode-template-vue2-admin-webpack.zip'
+        url: 'https://static.chensuiyi.com/download/yiadmin-vue2.zip'
     },
     {
         name: '接口模板',
-        value: 'yiapi-template-free',
+        value: 'yiapi-free',
         describe: '通用免费yiapi接口开发模板',
-        url: 'https://static.chensuiyi.com/download/yiapi-template-free.zip'
+        url: 'https://static.chensuiyi.com/download/yiapi-free.zip'
     }
 ];
 
