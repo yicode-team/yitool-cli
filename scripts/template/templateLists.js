@@ -4,7 +4,7 @@ let _templateLists = [
         name: '基础模板',
         value: 'vue2-base-webpack',
         describe: '通用Vue2基础项目模板',
-        url: 'https://static.chensuiyi.com/download/yicode-template-vue2-base-webpack.zip'
+        url: 'https://static.chensuiyi.com/download/yibase-vue2.zip'
     },
     {
         name: '基础模板',
