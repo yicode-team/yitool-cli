@@ -32,6 +32,10 @@ async function executeCommand() {
             value: 'template'
         },
         {
+            name: `${_padEnd('zip', 12)} ${chalk.cyanBright('创建压缩包')}`,
+            value: 'zip'
+        },
+        {
             name: `${_padEnd('version', 12)} ${chalk.cyanBright('查看版本信息')}`,
             value: 'version'
         }
