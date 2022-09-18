@@ -10,7 +10,7 @@ import { pathToFileURL } from 'url';
 
 import { merge as _merge, isArray as _isArray, isString as _isString } from 'lodash-es';
 
-import { cliDir, rootDir } from '../../system.js';
+import { cliDir, rootDir, yicodeDir } from '../../system.js';
 
 let packageConfig = fs.readJSONSync(path_resolve(cliDir, 'package.json'), { throws: false }) || {};
 
@@ -21,7 +21,7 @@ export async function prompt(options) {
     try {
         // 合并参数
         promptParams = _merge(promptParams, options);
-        let yitoolConfigPath = path_resolve(rootDir, 'yitool.config.json');
+        let yitoolConfigPath = path_resolve(yicodeDir, 'yitool.config.json');
         fs.ensureFileSync(yitoolConfigPath);
         let yitoolConfigData = fs.readJSONSync(yitoolConfigPath);
 

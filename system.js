@@ -9,6 +9,9 @@ export const rootDir = process.cwd();
 // 临时文件路径
 export const tempDir = path_join(rootDir, '.temp');
 
+// yicode文件路径
+export const yicodeDir = path_join(rootDir, '.yicode');
+
 // NPM 镜像列表
 export const yicodeNpmrc = path_join(process.env[process.platform === 'win32' ? 'USERPROFILE' : 'HOME'], '.yicode-npmrc');
 
