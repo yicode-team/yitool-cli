@@ -60,6 +60,7 @@ npm install -g @yicode/yitool-cli
 
 -   [x] git 项目提交统计
 -   [x] 一键切换 npm 镜像
+-   [ ] ftp 文件上传部署
 
 ## 社区交流
 
