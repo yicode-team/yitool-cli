@@ -24,6 +24,20 @@ npm install -g @yicode/yitool-cli
 
 ![picture 6](https://s2.loli.net/2022/09/16/IOxcv6Mm2VboTKd.png)
 
+# 压缩当前项目资源
+
+配置文件
+
+![picture 2](https://s2.loli.net/2022/09/18/MEiIHhoDwpFTfKY.png)
+
+资源压缩中
+
+![picture 3](https://s2.loli.net/2022/09/18/JwGNxEOLAuK7HrC.png)
+
+压缩成功
+
+![picture 5](https://s2.loli.net/2022/09/18/3wrDhY6l4PgdsSH.png)
+
 # 易编程工作室介绍
 
 ![picture 1](https://s2.loli.net/2022/09/16/VKkZq5Bb632vsuy.png)
@@ -60,6 +74,7 @@ npm install -g @yicode/yitool-cli
 
 -   [x] git 项目提交统计
 -   [x] 一键切换 npm 镜像
+-   [x] 文件文件压缩为 zip 包
 -   [ ] ftp 文件上传部署
 
 ## 社区交流
